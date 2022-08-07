@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Category = ({categoryStr}) => {
+const Category = ({categoryStr, handleCategory}) => {
   return (
-    <div>{categoryStr}</div>
+    <div onClick={() => handleCategory(categoryStr)} style={{margin: "20px"}}>
+     {categoryStr}
+    </div>
   )
 }
 
