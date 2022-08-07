@@ -1,10 +1,11 @@
 import React from 'react'
 import FavoritesCard from './FavoritesCard'
 
-const FavoritesContainer = ({data}) => {
+const FavoritesContainer = ({items, categoryList}) => {
   return (
     <div>
-    {data.map(dataObj => <FavoritesCard dataObj={dataObj} key={dataObj.id}/>)}
+     {items.map((itemsObj, index) => <FavoritesCard itemsObj={itemsObj} key={index}/>)}
+     
     </div>
   )
 }

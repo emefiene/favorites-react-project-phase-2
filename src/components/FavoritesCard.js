@@ -1,14 +1,20 @@
 import React from 'react'
 
-const FavoritesCard = ({dataObj:{name,image,type},dataObj}) => {
+const FavoritesCard = ({itemsObj:{name,image,type},itemsObj}) => {
     
   return (
-    <div>
-    <h3>{name}</h3>
-    <img src={image} alt="Logo" />
-    <h5>{type}</h5>
-    </div>
+    <li className='card' style={{display:"inline-block"}} >
+      <div className='image'  style={{display:"inline-block"}}>
+        <img src={image} alt="Logo" />
+        <h3>{name}</h3>
+        <h5>{type}</h5>
+       </div>
+    </li>
+      
+    
+
   )
+    
 }
 
 export default FavoritesCard
