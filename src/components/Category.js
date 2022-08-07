@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Category = () => {
+const Category = ({categoryStr}) => {
   return (
-    <div>Category</div>
+    <div>{categoryStr}</div>
   )
 }
 
