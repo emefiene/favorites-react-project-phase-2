@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const FavoritesCard = ({itemsObj:{name,image,type},itemsObj,addToCart}) => {
+const FavoritesCard = ({itemsObj:{name,image,type},itemsObj,addToCart,handleDelete}) => {
   const [like , setLike] = useState(false)
 
  const handleLick = () => {
@@ -15,6 +15,7 @@ const FavoritesCard = ({itemsObj:{name,image,type},itemsObj,addToCart}) => {
         <h5>{type}</h5>
         <p onClick={handleLick}>{like? "❤️": "🧡"}</p>
         <button onClick={() => addToCart(itemsObj)}>Add To Cart</button>
+        <button onClick={() => handleDelete(itemsObj)}>Delete</button>
 
         
        </div>

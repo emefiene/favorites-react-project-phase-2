@@ -1,14 +1,15 @@
 {
-    "listings": [ {
+  "listings": [
+    {
       "id": 1,
       "name": "Mint",
       "image": "https://www.almanac.com/sites/default/files/styles/max_2600x2600/public/image_nodes/mint-planting-growing-harvesting.jpg?itok=ZharoSCk",
-      "Type": "Vegetable",
+      "type": "Vegetable",
       "price": 3
     },
     {
       "id": 2,
-      "name":"Lettuce",
+      "name": "Lettuce",
       "image": "https://m.media-amazon.com/images/I/41CcQZHy+6L._AC_.jpg",
       "type": "Vegetable",
       "price": 2.5
@@ -57,7 +58,7 @@
     },
     {
       "id": 9,
-      "name":"Peas",
+      "name": "Peas",
       "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQuCJsZU8INJpCZq9wt7-9ctfZ7zMjKvMOsWhQ6FUR6KZbXUzPRA7UstU8jy2o2mJso_vs8LlvqlA&usqp=CAc",
       "type": "Vegetable",
       "price": 3.6
@@ -95,21 +96,21 @@
       "name": "Carrot",
       "image": "https://www.jessicagavin.com/wp-content/uploads/2019/02/carrots-7-1200.jpg",
       "type": "Vegetable",
-      "price":6.5
+      "price": 6.5
     },
     {
       "id": 15,
       "name": "Red Chilly",
       "image": "https://m.media-amazon.com/images/I/91SaIfMs79L._SL1500_.jpg",
       "type": "Vegetable",
-      "price":5.5
+      "price": 5.5
     },
     {
       "id": 16,
       "name": "Mushroom",
       "image": "https://i5.walmartimages.com/asr/9de98187-0b16-41e8-8869-af51ad18e73f.e1fbe0b26248d0bc60cc3dbf36364cfc.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
       "type": "Vegetable",
-      "price":7.5
+      "price": 7.5
     },
     {
       "id": 17,
@@ -151,21 +152,21 @@
       "name": "Chandelier",
       "image": "https://m.media-amazon.com/images/I/71uhNy91XML._AC_SS450_.jpg",
       "type": "Eletronics",
-      "price" : 22
+      "price": 22
     },
     {
       "id": 5,
       "name": "Television",
       "image": "https://image-us.samsung.com/SamsungUS/home/television-home-theater/tvs/s95-qled-4k/SDSAC-4284-02_QN55S95BAFXZA-PDP-GALLERY-TV-1600x1200.jpg?$product-details-jpg$",
       "type": "Eletronics",
-      "price" : 150
+      "price": 150
     },
     {
       "id": 6,
       "name": "Mouse",
       "image": "https://media.officedepot.com/images/f_auto,q_auto,e_sharpen,h_450/products/415086/415086_o01_091820/415086",
       "type": "Eletronics",
-      "price" : 45
+      "price": 45
     },
     {
       "id": 7,
@@ -228,7 +229,7 @@
       "name": "Oven",
       "image": "https://images.thdstatic.com/productImages/6f08c028-3321-44bb-b0eb-f1cd0e866556/svn/stainless-steel-cafe-double-oven-gas-ranges-cgs750p2ms1-64_600.jpg",
       "type": "Eletronics",
-      "price":1800
+      "price": 1800
     },
     {
       "id": 5,
@@ -291,7 +292,7 @@
       "name": "Trash Bags",
       "image": "https://m.media-amazon.com/images/I/61Hp43icnsL._AC_SL1080_.jpg",
       "type": "Household appliances",
-      "price": 12.50
+      "price": 12.5
     },
     {
       "id": 6,
@@ -305,21 +306,21 @@
       "name": "Toilet Paper",
       "image": "https://m.media-amazon.com/images/I/81BwGMp290L._AC_SL1500_.jpg",
       "type": "Household appliances",
-      "price": 11.50
+      "price": 11.5
     },
     {
       "id": 5,
       "name": "Deep wood",
       "image": "https://i5.walmartimages.com/asr/8a1415de-83d9-4cdf-8bda-38839ea437ad.5276c1b9d6b718d0bdb9410433a4d671.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
       "type": "Household appliances",
-      "price": 8.30
+      "price": 8.3
     },
     {
       "id": 6,
       "name": "Raid",
       "image": "https://m.media-amazon.com/images/I/61q15pTW45S._AC_SL1396_.jpg",
       "type": "Household appliances",
-      "price":  4.80
+      "price": 4.8
     },
     {
       "id": 7,
@@ -354,7 +355,7 @@
       "name": "Cheer Liquid Laundry",
       "image": "https://m.media-amazon.com/images/I/71WMsaEZsIL._AC_SL1500_.jpg",
       "type": "Household appliances",
-      "price": 12.50
+      "price": 12.5
     },
     {
       "id": 7,
@@ -368,7 +369,7 @@
       "name": "Snuggle",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS09r9JqkZMWt7euErav0HV4sJwZjiwnjUjLo7L_zV3uqINfrSCgwLFPfanfR52PLrgdzA&usqp=CAU",
       "type": "Household appliances",
-      "price":50
+      "price": 50
     },
     {
       "id": 7,
@@ -382,14 +383,14 @@
       "name": "Bounce",
       "image": "https://m.media-amazon.com/images/I/815gLgNU5XL._AC_SL1500_.jpg",
       "type": "Household appliances",
-      "price": 12.50
+      "price": 12.5
     },
     {
       "id": 7,
       "name": "XTRA",
       "image": "https://i5.walmartimages.com/asr/7654b019-964f-48ad-a0dc-009f63f57b1b.fb29b2910748ba6b52824ad70a302ea0.jpeg",
       "type": "Household appliances",
-      "price": 14.50
+      "price": 14.5
     },
     {
       "id": 5,
@@ -403,7 +404,7 @@
       "name": "Sandwich Bag",
       "image": "https://m.media-amazon.com/images/I/61L8ZcXfLcL._AC_SL1000_.jpg",
       "type": "Household appliances",
-      "price": 14.50
+      "price": 14.5
     },
     {
       "id": 6,
@@ -533,8 +534,8 @@
     },
     {
       "id": 7,
-      "name": "ATB ",
-      "image": "https://cdn.shopify.com/s/files/1/1354/8177/products/1466_Denim_44db7509-160a-4205-bdbb-06c0ca0f10e8_1800x1800.png?v=1658500049",
+      "name": "Glasses ",
+      "image": "https://optimaxweb.glassesusa.com/image/upload/f_auto,q_auto/ms/media/catalog_product/1/3788_f.jpg",
       "type": "Men and Women wears",
       "price": 77
     },
@@ -557,7 +558,7 @@
       "name": "Creswell Sock mills",
       "image": "https://cdn.shopify.com/s/files/1/0484/4689/8340/products/HIXU_Group5.jpg?v=1647292240",
       "type": "Men and Women wears",
-      "price":78
+      "price": 78
     },
     {
       "id": 6,
@@ -579,18 +580,12 @@
       "image": "https://i5.walmartimages.com/asr/4bc6783b-5711-45e8-a6e1-756dae894dcc.0d982ca757ae6429fd0a945eb8cb3278.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
       "type": "Men and Women wears",
       "price": 87
-      
     }
-    
   ],
-  
-  
-
   "category": [
     "Men and Women wears",
     "Household appliances",
-    "Vegetable"
+    "Vegetable",
+    "Eletronics"
   ]
-
-
 }
