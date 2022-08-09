@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from "react";
 import FavoritesContainer from "./FavoritesContainer";
+import { Route } from "react-router-dom";
 import Form from "./Form";
 import Search from "./Search";
+import { Switch } from "react-router-dom";
 
 function App() {
   const [allItems, setAllItems] = useState([])
@@ -101,14 +103,20 @@ function App() {
   return (
     <div>
      <h2>Cart:{cart.length}</h2>
-     <Search handleSearch={handleSearch}/>
-     <Form handleSubmit={handleSubmit} handleChange={handleChange} formData={formData}/>
-     <FavoritesContainer 
-     items={items} 
-     categoryList={categoryList} 
-     handleCategory={handleCategory}
-     addToCart={addToCart}
-     handleDelete={handleDelete}/>
+     <Switch>
+      <Route path="/items/new">
+        <Form handleSubmit={handleSubmit} handleChange={handleChange} formData={formData}/>
+      </Route>
+      <Route path="/items">
+         <Search handleSearch={handleSearch}/>
+         <FavoritesContainer 
+         items={items} 
+         categoryList={categoryList} 
+         handleCategory={handleCategory}
+         addToCart={addToCart}
+         handleDelete={handleDelete}/>
+      </Route>
+      </Switch>
     </div>
   );
 }
