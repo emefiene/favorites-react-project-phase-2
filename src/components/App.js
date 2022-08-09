@@ -67,7 +67,10 @@ function App() {
       body: JSON.stringify(formData)
     })
     .then(res => res.json())
-    setItems([formData, ...items])
+    .then(data => {
+      setItems([data,...items])
+
+    })
     setFormData({
       name:"",
       image:"",
@@ -77,7 +80,11 @@ function App() {
   }
 
   const handleSearch = (e) => {
-    const filterSearch = allItems.filter(itemObj => itemObj.name.toLowerCase().includes(e.target.toLowerCase()))
+   // console.log(e.target.value)
+    const filterSearch = allItems.filter(itemObj => {
+      //console.log(itemObj)
+      return itemObj.name.toLowerCase().includes(e.target.value.toLowerCase())
+    })
    setItems(filterSearch)
   }
 
