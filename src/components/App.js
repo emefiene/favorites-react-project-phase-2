@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import Form from "./Form";
 import Search from "./Search";
 import { Switch } from "react-router-dom";
+import ItemsDetails from "./ItemsDetails";
 
 function App() {
   const [allItems, setAllItems] = useState([])
@@ -107,14 +108,17 @@ function App() {
       <Route path="/items/new">
         <Form handleSubmit={handleSubmit} handleChange={handleChange} formData={formData}/>
       </Route>
+      <Route path="/items/:id">
+        <ItemsDetails addToCart={addToCart}
+        handleDelete={handleDelete}/>
+      </Route>
       <Route path="/items">
          <Search handleSearch={handleSearch}/>
          <FavoritesContainer 
          items={items} 
          categoryList={categoryList} 
          handleCategory={handleCategory}
-         addToCart={addToCart}
-         handleDelete={handleDelete}/>
+         />
       </Route>
       </Switch>
     </div>
