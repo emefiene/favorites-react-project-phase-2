@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams , Link} from 'react-router-dom'
 
 const ItemsDetails = ({addToCart,handleDelete}) => {
     const [itemsDetail, setItemsDetail] = useState(null)
@@ -34,6 +34,7 @@ const ItemsDetails = ({addToCart,handleDelete}) => {
      <p onClick={handleLick}>{like? "❤️": "🧡"}</p>
      <button onClick={() => addToCart(itemsDetail)}>Add To Cart</button>
      <button onClick={() => handleDelete(itemsDetail)}>Delete</button>
+     <Link to="/items"><button>Home</button></Link>
     </div>
   )
 }

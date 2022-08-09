@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
+import { Switch,useHistory , Route} from "react-router-dom";
 import FavoritesContainer from "./FavoritesContainer";
-import { Route } from "react-router-dom";
 import Form from "./Form";
 import Search from "./Search";
-import { Switch } from "react-router-dom";
+
 import ItemsDetails from "./ItemsDetails";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
     type:"",
     price:""
   })
-  
+  const history = useHistory()
 
   useEffect(() => {
     fetch("http://localhost:3000/listings")
@@ -47,6 +47,7 @@ function App() {
       const deleteItems = allItems.filter(deleteItem => deleteItem.id !== itemObj.id)
       setAllItems(deleteItems)
       setItems(deleteItems)
+      history.push("/items")
 
     })
   }
@@ -93,6 +94,7 @@ function App() {
 
   const addToCart = (itemsObj) => {
     setCart([...cart, itemsObj])
+    history.push("/items")
   }
 
   const handleCategory = (categoryStr) => {
@@ -105,14 +107,14 @@ function App() {
     <div>
      <h2>Cart:{cart.length}</h2>
      <Switch>
-      <Route path="/items/new">
+      <Route exact path="/items/new">
         <Form handleSubmit={handleSubmit} handleChange={handleChange} formData={formData}/>
       </Route>
-      <Route path="/items/:id">
+      <Route exact path="/items/:id">
         <ItemsDetails addToCart={addToCart}
         handleDelete={handleDelete}/>
       </Route>
-      <Route path="/items">
+      <Route exact path="/items">
          <Search handleSearch={handleSearch}/>
          <FavoritesContainer 
          items={items} 
