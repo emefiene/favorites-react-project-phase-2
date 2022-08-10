@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from "react";
 import { Switch,useHistory , Route} from "react-router-dom";
 import FavoritesContainer from "./FavoritesContainer";
+import "./style.css"
 import Form from "./Form";
 import Search from "./Search";
 
 import ItemsDetails from "./ItemsDetails";
+import styled,{ThemeProvider} from "styled-components";
 
 function App() {
   const [allItems, setAllItems] = useState([])
@@ -104,6 +106,7 @@ function App() {
 
 
   return (
+    <ThemeProvider theme={theme}>
     <div>
      <h2>Cart:{cart.length}</h2>
      <Switch>
@@ -124,7 +127,14 @@ function App() {
       </Route>
       </Switch>
     </div>
+    </ThemeProvider>
   );
 }
 
 export default App;
+const theme = {
+  font:{
+    primary:"'Dancing Script', cursive",
+    secondary:"'Roboto', sans-serif"
+  }
+}
