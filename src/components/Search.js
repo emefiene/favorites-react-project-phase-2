@@ -1,12 +1,25 @@
 import React from 'react'
+import styled from 'styled-components'
 
 const Search = ({handleSearch}) => {
   return (
-    <div style={{display:"flex", margin:"20px"}}>
-      <input type="text" onChange={handleSearch}></input>
+    <SearchStyle>
+      <input type="text" onChange={handleSearch} placeholder=".... Search"></input>
       
-    </div>
+    </SearchStyle>
   )
 }
 
 export default Search
+
+const SearchStyle = styled.div`
+
+   margin: 20px;
+   display:flex
+   width: 30%;
+   text-align:center;
+   border: 1px solid black;
+   color: white; 
+   background-color: green;
+
+`
