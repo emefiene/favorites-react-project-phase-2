@@ -35,6 +35,7 @@ const ItemsDetails = ({addToCart,handleDelete}) => {
      <button onClick={() => addToCart(itemsDetail)}>Add To Cart</button>
      <button onClick={() => handleDelete(itemsDetail)}>Delete</button>
      <Link to="/items"><button>Home</button></Link>
+     <Link to="/items/new"><button>Form</button></Link>
     </div>
   )
 }

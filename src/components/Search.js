@@ -7,6 +7,8 @@ const Search = ({handleSearch}) => {
       <input type="text" onChange={handleSearch} placeholder=".... Search"></input>
       
     </SearchStyle>
+    
+
   )
 }
 

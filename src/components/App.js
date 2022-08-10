@@ -76,6 +76,7 @@ function App() {
     .then(res => res.json())
     .then(data => {
       setItems([data,...items])
+      history.push("/items")
 
     })
     setFormData({
@@ -109,7 +110,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <div>
-     <h2>Cart:{cart.length}</h2>
+     <h2 style={{textAlign:"center"}}>Cart:{cart.length}</h2>
      <Header/>
      <Switch>
       <Route exact path="/items/new">

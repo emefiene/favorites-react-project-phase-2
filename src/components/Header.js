@@ -6,7 +6,7 @@ const Header = () => {
     <Head>
        <h1><strong>Favorites</strong></h1>
        <h1><strong>Welcome to Favorites</strong></h1>
-       
+     
     </Head>
   )
 }
