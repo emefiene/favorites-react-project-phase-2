@@ -1,13 +1,26 @@
 import React from 'react'
+import styledComponents from 'styled-components'
 
 const Header = () => {
   return (
-    <div className='row'>
-    <h2 className='block'>Household</h2>
-    <h2 className='block'>Electronics</h2>
-    <h2 className='block'>Wares</h2>
-    </div>
+    <Head>
+       <h1><strong>Favorites</strong></h1>
+       <h1><strong>Welcome to Favorites</strong></h1>
+       
+    </Head>
   )
 }
 
 export default Header
+
+const Head = styledComponents.div`
+  background-color:Aquamarine;
+  text-align:center;
+   
+  h1{
+    font-family: ${props => props.theme.font.secondary}
+  }
+ 
+  
+
+`

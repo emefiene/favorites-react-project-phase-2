@@ -7,6 +7,7 @@ import Search from "./Search";
 
 import ItemsDetails from "./ItemsDetails";
 import styled,{ThemeProvider} from "styled-components";
+import Header from "./Header";
 
 function App() {
   const [allItems, setAllItems] = useState([])
@@ -109,6 +110,7 @@ function App() {
     <ThemeProvider theme={theme}>
     <div>
      <h2>Cart:{cart.length}</h2>
+     <Header/>
      <Switch>
       <Route exact path="/items/new">
         <Form handleSubmit={handleSubmit} handleChange={handleChange} formData={formData}/>
