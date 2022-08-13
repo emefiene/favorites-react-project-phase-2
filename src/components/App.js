@@ -111,11 +111,17 @@ function App() {
 
   //}
 
+  // const handleCartClick = () => {
+    // return(
+     // <RenderCart cart={cart}/>       
+     //)
+     //history.push("/RenderCart")  
+   //}
+
   return (
     <ThemeProvider theme={theme}>
     <div>
      <RenderCart cart={cart}/>
-     <h2 style={{textAlign:"center"}}>Cart:{cart.length}</h2>
      <Header/>
      <Switch>
       <Route exact path="/items/new">

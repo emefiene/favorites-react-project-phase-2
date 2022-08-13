@@ -3,7 +3,7 @@ import React from 'react'
 const Cart = ({cart}) => {
     console.log(cart)
   return (
-    <div>Cart</div>
+    <h2 style={{textAlign:"center"}} >Cart:{cart.length}</h2>
   )
 }
 
