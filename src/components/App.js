@@ -106,18 +106,6 @@ function App() {
    setItems(filterCategory)
   }
   
-  //const renderCart = () => {
-    //console.log("addCArt")
-
-  //}
-
-  // const handleCartClick = () => {
-    // return(
-     // <RenderCart cart={cart}/>       
-     //)
-     //history.push("/RenderCart")  
-   //}
-
   return (
     <ThemeProvider theme={theme}>
     <div>
