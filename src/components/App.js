@@ -4,7 +4,7 @@ import FavoritesContainer from "./FavoritesContainer";
 import "./style.css"
 import Form from "./Form";
 import Search from "./Search";
-
+import RenderCart from "./RenderCart"
 import ItemsDetails from "./ItemsDetails";
 import styled,{ThemeProvider} from "styled-components";
 import Header from "./Header";
@@ -105,11 +105,16 @@ function App() {
     const filterCategory = allItems.filter(itemsObj => itemsObj.type === categoryStr)
    setItems(filterCategory)
   }
+  
+  //const renderCart = () => {
+    //console.log("addCArt")
 
+  //}
 
   return (
     <ThemeProvider theme={theme}>
     <div>
+     <RenderCart cart={cart}/>
      <h2 style={{textAlign:"center"}}>Cart:{cart.length}</h2>
      <Header/>
      <Switch>
