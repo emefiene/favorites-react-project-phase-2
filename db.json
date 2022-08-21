@@ -580,6 +580,13 @@
       "image": "https://i5.walmartimages.com/asr/4bc6783b-5711-45e8-a6e1-756dae894dcc.0d982ca757ae6429fd0a945eb8cb3278.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
       "type": "Men and Women wears",
       "price": 87
+    },
+    {
+      "name": "Emeke",
+      "image": "https://www.bluey.tv/wp-content/uploads/2020/07/Bandit-Chilli.jpg",
+      "type": "hhh",
+      "price": "3",
+      "id": 84
     }
   ],
   "category": [

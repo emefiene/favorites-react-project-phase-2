@@ -14,13 +14,16 @@ function App() {
   const [items, setItems] = useState([])
   const [categoryList, setCategoryList] = useState([])
   const [cart , setCart] = useState([])
-  const [formData , setFormData] = useState({
+  const initialized = {
     name:"",
     image:"",
     type:"",
     price:""
-  })
+  }
+  const [formData , setFormData] = useState(initialized)
   const history = useHistory()
+
+  
 
   useEffect(() => {
     fetch("http://localhost:3000/listings")
@@ -79,18 +82,11 @@ function App() {
       history.push("/items")
 
     })
-    setFormData({
-      name:"",
-      image:"",
-      type:"",
-      price:""
-    })
+    setFormData(initialized)
   }
 
   const handleSearch = (e) => {
-   // console.log(e.target.value)
     const filterSearch = allItems.filter(itemObj => {
-      //console.log(itemObj)
       return itemObj.name.toLowerCase().includes(e.target.value.toLowerCase())
     })
    setItems(filterSearch)

@@ -6,18 +6,15 @@ const FavoritesCard = ({itemsObj:{name,image,type},itemsObj}) => {
     
   return (
     
-      <Card>
-        <img className='img' src={image} alt="Logo" />
-        <h5>{name}</h5>
-        <h5>{type}</h5>
-        <Link to={`/items/${itemsObj.id}`}><strong>Clict to Proceed</strong></Link>
+    <Card>
+      <img className='img' src={image} alt="Logo" />
+      <h5>{name}</h5>
+      <h5>{type}</h5>
+      <Link to={`/items/${itemsObj.id}`}><strong>Click to Proceed</strong></Link>
         
-       </Card>
-    
-      
-    
-
+    </Card>
   )
+     
     
 }
 
