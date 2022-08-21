@@ -18,8 +18,8 @@ const ItemsDetails = ({addToCart,handleDelete}) => {
       fetch(`http://localhost:3000/listings/${itemsId}`)
       .then(res => res.json())
       .then(data => {
-         setItemsDetail(data)
-         setLoaded(true)
+        setItemsDetail(data)
+        setLoaded(true)
 
       })
     },[itemsId])
@@ -27,15 +27,15 @@ const ItemsDetails = ({addToCart,handleDelete}) => {
   if(!loaded) return <h2>Loading ....</h2>
   return (
     <div>
-     <img src={itemsDetail.image} alt="Logo"  style={{display:"inline-block", width:"500px"}}/>
-     <h3>{itemsDetail.name}</h3>
-     <h5>{itemsDetail.type}</h5>
-     <p>${itemsDetail.price}</p>
-     <p onClick={handleLick}>{like? "❤️": "🧡"}</p>
-     <button onClick={() => addToCart(itemsDetail)}>Add To Cart</button>
-     <button onClick={() => handleDelete(itemsDetail)}>Delete</button>
-     <Link to="/items"><button>Home</button></Link>
-     <Link to="/items/new"><button>Form</button></Link>
+      <img src={itemsDetail.image} alt="Logo"  style={{display:"inline-block", width:"500px"}}/>
+      <h3>{itemsDetail.name}</h3>
+      <h5>{itemsDetail.type}</h5>
+      <p>${itemsDetail.price}</p>
+      <p onClick={handleLick}>{like? "❤️": "🧡"}</p>
+      <button onClick={() => addToCart(itemsDetail)}>Add To Cart</button>
+      <button onClick={() => handleDelete(itemsDetail)}>Delete</button>
+      <Link to="/items"><button>Home</button></Link>
+      <Link to="/items/new"><button>Form</button></Link>
     </div>
   )
 }

@@ -18,8 +18,6 @@ const Head = styledComponents.div`
    
   h1{
     font-family: ${props => props.theme.font.secondary}
-  }
- 
-  
+  } 
 
 `
