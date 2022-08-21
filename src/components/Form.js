@@ -9,31 +9,31 @@ const Form = ({handleSubmit,handleChange, formData}) => {
         name="name"
         aria-label="name"
         value={formData.name}
-       onChange={handleChange}
+        onChange={handleChange}
      ></input>
      <label>Image</label>
      <input
-     type="src"
-     name="image"
-     aria-label="image"
-     value={formData.image}
-     onChange={handleChange}
+        type="src"
+        name="image"
+        aria-label="image"
+        value={formData.image}
+        onChange={handleChange}
      ></input>
      <label>Type</label>
      <input
-     type="text"
-     name="type"
-     aria-label="type"
-     value={formData.type}
-     onChange={handleChange}
+        type="text"
+        name="type"
+        aria-label="type"
+        value={formData.type}
+        onChange={handleChange}
      ></input>
      <label>Price</label>
      <input
-     type="number"
-     name="price"
-     aria-label="price"
-     value={formData.price}
-     onChange={handleChange}
+        type="number"
+        name="price"
+        aria-label="price"
+        value={formData.price}
+        onChange={handleChange}
      ></input>
      <input type="submit"/>
     </form>
