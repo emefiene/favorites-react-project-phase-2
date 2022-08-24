@@ -2,6 +2,7 @@ import React from 'react'
 import Category from './Category'
 import FavoritesCard from './FavoritesCard'
 import styled from 'styled-components'
+import ClickMe from './ClickMe'
 
 const FavoritesContainer = ({items, categoryList,handleCategory}) => {
   return (
